@@ -101,9 +101,6 @@ To enable advanced AI responses:
 1. Install GPT4All: `pip install gpt4all`
 2. Download the model file (it will be downloaded automatically on first use)
 
-## License
-
-[MIT License](LICENSE)
 
 ## Contributing
 
