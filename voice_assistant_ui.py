@@ -4,6 +4,7 @@ import time
 from PIL import Image, ImageTk
 from voice_assistant_model import VoiceAssistantModel
 import math
+import os
 
 class VoiceAssistantUI:
     def __init__(self):
@@ -81,7 +82,7 @@ class VoiceAssistantUI:
         logo_frame.pack(side="left", padx=20, pady=20)
        
         placeholder_image = ctk.CTkImage(
-            light_image=Image.open("D:\\ai hackathon\\chatbot_logo.jpg"),
+            light_image=Image.open(os.path.join("assets", "images", "chatbot_logo.jpg")),
             size=(100, 100)
         )
 
