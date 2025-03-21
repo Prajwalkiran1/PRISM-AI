@@ -78,20 +78,9 @@ class VoiceAssistantUI:
         header_left = ctk.CTkFrame(header_frame, fg_color="transparent")
         header_left.pack(side="left", fill="y")
        
-        logo_frame = ctk.CTkFrame(header_left, fg_color=self.colors["accent_primary"], width=50, height=50, corner_radius=15)
-        logo_frame.pack(side="left", padx=20, pady=20)
+        
        
-        placeholder_image = ctk.CTkImage(
-            light_image=Image.open(os.path.join("assets", "images", "chatbot_logo.jpg")),
-            size=(100, 100)
-        )
-
-        logo_label = ctk.CTkLabel(
-            logo_frame,
-            image=placeholder_image,
-            text="",
-        )
-        logo_label.place(relx=0.5, rely=0.5, anchor="center")
+        
        
         title_frame = ctk.CTkFrame(header_left, fg_color="transparent")
         title_frame.pack(side="left", padx=(5, 20), pady=20, fill="y")
